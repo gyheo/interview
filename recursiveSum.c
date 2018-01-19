@@ -19,10 +19,20 @@ void main(void){
 }
 
 int sum(int n){
+	/*
 	int total = 0;
 	for(int i = 1; i <= n; i++){
 		total += i;
 	}
 
 	return total;
+	*/
+
+	if(n > 0){
+		return n + sum(n-1);
+	}
+
+	else{
+		return 0;
+	}
 }
