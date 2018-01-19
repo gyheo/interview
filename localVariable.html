@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>local variable</title>
+</head>
+<body>
+	<script>
+		// 지역함수와 지역변수에 대한 scope 이해를 물어보았던 문제
+		// 간단하지만 머릿 속에 잘 새겨두자
+		function f(){
+			var i = 2;
+		}
+		var i = 1;
+
+		f();
+		alert(i);
+	</script>
+</body>
+</html>
