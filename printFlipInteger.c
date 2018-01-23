@@ -24,9 +24,12 @@ void printFlip(int input){
 	int remain = 0;
 
 	/*
-	// 문제 주어졌을 때 내가 해결한 방식
-	
-	while(1){
+		문제 주어졌을 때 내가 해결한 방식
+		몫과 나머지의 특징을 이용함
+	*/
+
+	/*
+		while(1){
 		remain = input % 10;
 
 		printf("%d", remain);
@@ -47,6 +50,7 @@ void printFlip(int input){
 		Q2) 그럼 새로운 질문, Recursive로 구현해볼까요?
 	*/
 
+	// Recursive
 	remain = input % 10;
 	printf("%d", remain);
 
