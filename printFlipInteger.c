@@ -2,7 +2,14 @@
 
 void printFlip(int input);
 
+
 void main(void){
+	/*
+		문제
+		숫자를 입력했을 경우, 거꾸로 출력하도로 프로그램 작성
+		예) 356을 입력한 경우 653, 1424를 입력한 경우 4241
+	*/
+
 	int input = 0;
 
 	printf("printFilp integer \n");
@@ -34,10 +41,11 @@ void printFlip(int input){
 
 	*/
 
-	// 위의 방법은 Recursive인가요 아닌가요?
-	// Answer) 비슷해보이지만 다르다
-	// Why) 재귀함수의 호출 횟수가 많아지는 것 != 지역변수에 큰 숫자 입력하는 것
-	// 그럼 새로운 질문, Recursive로 구현해볼까요?
+	/* 
+		Q1) 위의 방법은 Recursive인가요 아닌가요?
+		A1) 비슷해보이지만 다르.  재귀함수의 호출 횟수가 많아지는 것 != 지역변수에 큰 숫자 입력하는 것
+		Q2) 그럼 새로운 질문, Recursive로 구현해볼까요?
+	*/
 
 	remain = input % 10;
 	printf("%d", remain);
@@ -46,5 +54,6 @@ void printFlip(int input){
 		printf("\n");
 		return ;
 	}
+
 	printFlip(input / 10);
 }
