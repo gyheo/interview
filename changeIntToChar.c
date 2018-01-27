@@ -2,6 +2,12 @@
 
 #define LENGTH 10
 
+	/*
+		문제)
+		excel의 column처럼 문자를 숫자로 변경해주는 프로그램 작성
+		(생각보다 어려웠던 문제)
+	*/
+
 void main(void){
 	int num;
 	int i = 0;
@@ -13,12 +19,12 @@ void main(void){
 	scanf("%d", &num);
 
 	while(1){
-		row[i] = num % 25 + 'A' - 1;
-		if(num / 25 == 0){
+		row[i] = (num % 26) + 'A' - 1;
+		if(num / 26 == 0){
 			row[i+1] = '\0'; 
 			break;
 		}
-		num = num / 25;
+		num = num / 26;
 		i++;
 	}
 
